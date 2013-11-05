@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.AndroidProject.dailyTracking"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <permission
+        android:name="com.AndroidProject.dailyTracking.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.AndroidProject.dailyTracking.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDoufpN6-3fRn4_YC_SKDFjRGYmHML1YUw" />
+
+        <activity
+            android:name="com.AndroidProject.dailyTracking.HomePageActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.TrackOptionsActivity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.EnterBillsActivity"
+            android:label="@string/title_activity_enter_bills" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.LocationHistoryActivity"
+            android:label="@string/title_activity_location_history" >
+        </activity>
+
+        <service android:name="com.AndroidProject.dailyTracking.DBLayout.LocationTable" />
+        <service android:name="com.AndroidProject.dailyTracking.services.LocationService" />
+        <service android:name="com.AndroidProject.dailytracking.entities.GPSTracker" />
+
+        <activity
+            android:name="com.AndroidProject.dailyTracking.TrackHistoryActivity"
+            android:label="@string/title_activity_track_history" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.TransactionHistoryActivity"
+            android:label="@string/title_activity_transaction_history" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.LocHistoryMapActivity"
+            android:label="@string/title_activity_loc_history_map" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.TransHistoryMapActivity"
+            android:label="@string/title_activity_trans_history_map" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.PictureTakerActivity"
+            android:label="@string/title_activity_picture_taker" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.PhotoHistoryActivity"
+            android:label="@string/title_activity_photo_history" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.PhotoHistoryMapActivity"
+            android:label="@string/title_activity_photo_history_map" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.PhotoDisplayActivity"
+            android:label="@string/title_activity_photo_display" >
+        </activity>
+        <activity
+            android:name="com.AndroidProject.dailyTracking.NoHistoryActivity"
+            android:label="@string/title_activity_no_history" >
+        </activity>
+    </application>
+
+</manifest>

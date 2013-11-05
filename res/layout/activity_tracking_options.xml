@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomePageActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="20dp"  >
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                
+                android:text="Track my location at 15 minutes intervals." />
+
+          <RadioGroup 
+              android:id="@+id/locationRadioButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" >
+                
+            <RadioButton
+                android:id="@+id/locationEnableButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable" />
+
+            <RadioButton
+                android:id="@+id/locationDisableButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disable" />
+          
+          </RadioGroup>
+          
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pictureTableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+             >
+
+            <TextView
+                android:id="@+id/pictureTextView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="Track location data with pictures I take." />
+
+         <RadioGroup 
+              android:id="@+id/pictureRadioButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" >
+          
+            <RadioButton
+                android:id="@+id/pictureEnableButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable" />
+
+            <RadioButton
+                android:id="@+id/pictureDisableButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disable" />
+            
+         </RadioGroup>
+          
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/moneyTableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/moneyTextView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="Track location data with bills I save." />
+
+          <RadioGroup 
+              android:id="@+id/pictureRadioButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" >
+         
+            <RadioButton
+                android:id="@+id/moneyEnableButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable" />
+
+            <RadioButton
+                android:id="@+id/moneyDosableButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disable" />
+            
+          </RadioGroup>
+          
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/saveTableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"  >
+
+            <Button
+                android:id="@+id/saveValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="23dp"
+                android:text="Submit" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
